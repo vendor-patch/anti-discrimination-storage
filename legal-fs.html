@@ -15,27 +15,27 @@ var userHosts = null === localStorage.getItem(storageHost.KEY_ALLOWED_HOSTS)
 var storage = storageHost([
     {
         origin: 'https://domainundhomepagespeicher.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: /^(https\:\/\/([^\.]+)\.domainundhomepagespeicher\.de)$/,
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://webfan.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: /^(https\:\/\/([^\.]+)\.webfan\.de)$/,
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://webfan3.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: /^(https\:\/\/([^\.]+)\.webfan3\.de)$/,
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
 	{
         origin: 'https://webfan.market',
@@ -47,31 +47,31 @@ var storage = storageHost([
     },
     {
         origin: 'https://frdl.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://cdn.frdl.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://data.registry.frdl.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://registry.frdl.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: /^(https\:\/\/([^\.]+)\.frdl\.de)$/,
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://frdlweb.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: /^(https\:\/\/([^\.]+)\.frdlweb\.de)$/,
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: 'https://startforum.de',
@@ -132,15 +132,19 @@ var storage = storageHost([
     },
     {
         origin: 'https://wfpu.de',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
         origin: /^(https\:\/\/([^\.]+)\.wfpu\.de)$/,
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     },
     {
-        origin: 'https://uschi.cool',
-        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir'],
+        origin: 'https://webf.at',
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
+    },
+    {
+        origin: /^(https\:\/\/([^\.]+)\.webf\.at)$/,
+        allowedMethods: ['get', 'set', 'remove', 'writeFile', 'readFile', 'unlink', 'mkdir', 'writeFrame'],
     }
 	
 ].concat(userHosts));
